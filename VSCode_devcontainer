@@ -2,7 +2,8 @@ How to start a project in windows using dev container.
 
 I use a Windows laptop and I always struggle to find the right libraries to install and run. When using VSCode, Windows has a Linux extension which I have heavily used. But Azure extension may fail to run successful. This problem has become more prominent as I am working with Azure AI services and Python. Pythin traditionally has Anaconda and python environment which aim to achieve this objective. But even with python env I have struggled to get my project to run. So for Windows users its best to use VSCode Devcontainers.
 
-What this needs is a .devcontainer folder at the top level of your project. Then add devcontainer.json file inside it. Define the devcontainer.json file like below:
+1. Deploy Docker desktop and make sure its running 
+2. Add devcontainer.json file inside it. Define the devcontainer.json file like below:
 
 
 "name": "Azure Developer CLI",
@@ -40,3 +41,5 @@ What this needs is a .devcontainer folder at the top level of your project. Then
         "memory": "8gb"
     }
 }
+
+3. Once the file is saved, VSCode - View - Command Palette - Dec Container-Open Folder in Container and then point at the devcontainer.json. This will start the container. 
